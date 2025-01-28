@@ -1,0 +1,72 @@
+/* Estilos generales */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+main {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.calculadora {
+    background-color: #999fa3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 0px 5px rgba(100, 50, 50, 0.2);
+    padding: 20px;
+}
+
+.display {
+    background-color: #222;
+    color: white;
+    font-size: 2.5em;
+    text-align: right;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    background-color: #444;
+    color: white;
+    font-size: 1.5em;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #857770;
+}
+
+.btn.operator {
+    
+    background-color: #ffadf4;
+    color: white;
+}
+
+.btn.operator:hover {
+    background-color: #ffaa33;
+}
+
+
+
+.btn.zero {
+    grid-column: span 2;
+}
