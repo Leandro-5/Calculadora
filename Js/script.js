@@ -85,14 +85,7 @@ buttons.forEach(button => {
             operator = null;
             updateDisplay('0');
         }
-        /*
-        // Si es el botón de cambiar signo (±)
-        else if (value === '±') {
-            if (currentInput !== '') {
-                currentInput = (parseFloat(currentInput) * -1).toString();
-                updateDisplay(currentInput);
-            }
-        }*/
+
 
         // Si es el botón de borrar (del)
         else if (value === 'del') {
